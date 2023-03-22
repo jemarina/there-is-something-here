@@ -1,0 +1,634 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP/X2L+UdWE8Vcy8ESTZFAV"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 1\n"
+      ],
+      "metadata": {
+        "id": "08BTIQglE5YG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hxn6c9kkD_oT",
+        "outputId": "e4a4169c-687e-4e58-bdd6-878bae8d50ce"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Марина\n",
+            "Паша\n",
+            "Привет Марина, Привет Паша\n"
+          ]
+        }
+      ],
+      "source": [
+        "a = input('')\n",
+        "b = input('')\n",
+        "print(f'Привет {a}, Привет {b}')\\"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 2"
+      ],
+      "metadata": {
+        "id": "cXdwdbLuFWV6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "print(a % b)\n",
+        "print(a**a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q-6mHTulFlKk",
+        "outputId": "5d0706b0-e602-4639-c89c-95b99297292e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "2\n",
+            "4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 3"
+      ],
+      "metadata": {
+        "id": "K49azlWhGYe0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math \n",
+        "a=int(input(\"Введите сторону a=\"))\n",
+        "b=int(input(\"Введите сторону b=\"))\n",
+        "c=int(input(\"Введите сторону c=\"))\n",
+        "p=(a+b+c)/2   \n",
+        "s=math.sqrt(p*(p-a)*(p-b)*(p-c))   \n",
+        "R = (2*s)/(a+b+c)\n",
+        "print(R)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oD8o_MXAGaSM",
+        "outputId": "99ee1b9d-fadc-4f15-bbf4-969e678428fd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите сторону a=3\n",
+            "Введите сторону b=4\n",
+            "Введите сторону c=5\n",
+            "1.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 4"
+      ],
+      "metadata": {
+        "id": "OIpOU8XJIGfR"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [1, 5, 1, 5, 1]\n",
+        "for i in range(len(a)):\n",
+        "    n = a[i]\n",
+        "    i += 1\n",
+        "    if n < 5:\n",
+        "        print(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "P44VkbKcIEyy",
+        "outputId": "8f6d7dd9-ed85-431c-e070-8ffb6d5dcbe3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "1\n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 5"
+      ],
+      "metadata": {
+        "id": "frK1IZ83KfN6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input())\n",
+        "sum = 0 \n",
+        "while n > 0:\n",
+        "    digit = n % 10\n",
+        "    sum = sum + digit\n",
+        "    n = n // 10\n",
+        "print(\"Сумма:\", sum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nJhefSR6Kzjr",
+        "outputId": "93414cd3-979d-480b-a3a7-f03fbb8e0a80"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "22\n",
+            "Сумма: 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Задача 6"
+      ],
+      "metadata": {
+        "id": "LhuEenSzLI3D"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [5, 1, 2, 6, 4, 7]\n",
+        "b = [4, 5, 1, 3, 2, 7]\n",
+        "c = []\n",
+        "for i in a:\n",
+        "    for j in b:\n",
+        "        if i == j:\n",
+        "            c.append(i)\n",
+        "            break\n",
+        " \n",
+        "print(c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9ua3jNYULKeK",
+        "outputId": "6251db3b-6f40-4b2b-adba-c508a162e4cc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[5, 1, 2, 2, 4, 7]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 7\n"
+      ],
+      "metadata": {
+        "id": "jng0Fo0eLg4W"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sum = int(input())\n",
+        "procent = int(input())\n",
+        "period = int(input())\n",
+        "for i in range(period):\n",
+        "  sum = sum * (1+((procent)/(100)))\n",
+        "  i+=1\n",
+        "print(sum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PgqIL5LmLgpm",
+        "outputId": "0095875c-727a-4b06-cec1-544783aa5c41"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1000\n",
+            "10\n",
+            "3\n",
+            "1331.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 8"
+      ],
+      "metadata": {
+        "id": "yp2cOYXyL-Xz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=int(input('Введите число: '))\n",
+        "def isPrime(n):\n",
+        "    for i in range(2, n):\n",
+        "        if n%i==0:\n",
+        "            resultat='Нет,не является простым'\n",
+        "            break\n",
+        "        else:\n",
+        "            resultat='Да,является простым'\n",
+        "    return(resultat)\n",
+        "print(isPrime(n))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Anoa_GPTMA0D",
+        "outputId": "c06575a1-de50-4fb2-966d-c4c613824896"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Введите число: 163673276632\n",
+            "Нет,не является простым\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 9"
+      ],
+      "metadata": {
+        "id": "QJVhyVVDOogF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def Syear(year):\n",
+        "  year = int(input())\n",
+        "  if year % 4 != 0 or (year % 100 == 0 and year % 400 != 0):\n",
+        "    return False\n",
+        "  else:\n",
+        "    return True"
+      ],
+      "metadata": {
+        "id": "YkV9g_5hOJmE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 10"
+      ],
+      "metadata": {
+        "id": "90PJCN5HOuO0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "S = input().split(\"&\")\n",
+        "S=set(S)\n",
+        "print(*S)"
+      ],
+      "metadata": {
+        "id": "ReXIwrT0OvuU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 11\n"
+      ],
+      "metadata": {
+        "id": "Vnq6moD6Ozv8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "S=input().split()\n",
+        "S=map(int,S)\n",
+        "Summ=sum(S)\n",
+        "print(Summ)"
+      ],
+      "metadata": {
+        "id": "ni2nYnlrOzWk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 12"
+      ],
+      "metadata": {
+        "id": "23twQpZDO8t0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import matplotlib.pyplot as plt\n",
+        "import numpy as np\n",
+        "x=np.linspace(-10, 10, 2000)\n",
+        "lim = 10\n",
+        "plt.ylim(-lim,lim)\n",
+        "plt.plot(x,lim*np.sin(x))"
+      ],
+      "metadata": {
+        "id": "qWp-jRqhO_fH"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 13"
+      ],
+      "metadata": {
+        "id": "NpbnbFt_PJ87"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "for x in range(1,50):\n",
+        "  print(np.cos(x))"
+      ],
+      "metadata": {
+        "id": "JhcxhutgPLai"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 14"
+      ],
+      "metadata": {
+        "id": "_9PmOS-QPOEb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s=input().split()\n",
+        "for a in s:\n",
+        "  if a[0] == \"*\":\n",
+        "    continue\n",
+        "  else:\n",
+        "    print(a)"
+      ],
+      "metadata": {
+        "id": "MJUXn3E4PP6b"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 15"
+      ],
+      "metadata": {
+        "id": "3LeGO57ZPStr"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import turtle \n",
+        "a = turtle.Turtle()\n",
+        "b = turtle.Turtle()\n",
+        "a.shape('turtle')\n",
+        "b.color('red')\n",
+        "\n",
+        "a.circle(150, 360, 3)\n",
+        "b.penup()\n",
+        "b.goto(0, 77)\n",
+        "b.pendown()\n",
+        "b.circle(74)\n",
+        "a.end_fill()"
+      ],
+      "metadata": {
+        "id": "YNO7NP_UPUp6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 16"
+      ],
+      "metadata": {
+        "id": "4Xa6HVKDPZLj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from random import randint\n",
+        "a=[]\n",
+        "for i in range(228):\n",
+        "  a.append(randint(1,99))\n",
+        "a.sort()\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "id": "j9jGb0T8PbDL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 17"
+      ],
+      "metadata": {
+        "id": "Hx2JxwwePiNK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def P(n):\n",
+        "  Pn = 1\n",
+        "  for i in range(1,n+1):\n",
+        "    Pn = Pn * i\n",
+        "  return(Pn)\n",
+        "print(P(3))\n",
+        "def A(k,n):\n",
+        "  t = 1\n",
+        "  l = 1\n",
+        "  for i in range(1,n+1):\n",
+        "    t = t * i\n",
+        "  for j in range(1,n-k):\n",
+        "    l = l * j\n",
+        "  Akn = t/l\n",
+        "  return(Akn)\n",
+        "print(A(4,5))\n",
+        "def C(n,k):\n",
+        "  t = 1\n",
+        "  l = 1\n",
+        "  z = 1\n",
+        "  for i in range(1,n+1):\n",
+        "    t = t * i\n",
+        "  for j in range(1,n-k):\n",
+        "    l = l * j\n",
+        "  for y in range(1,k+1):\n",
+        "    z = z * y\n",
+        "  Cnk = t/(z*l)\n",
+        "  return(Cnk)\n",
+        "print(C(13,7))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1CZXKN6ZPkEL",
+        "outputId": "3b22cbac-df44-4e20-b66c-20044031cf64"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "27\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Задача 18"
+      ],
+      "metadata": {
+        "id": "-aOeogEOQ5ZS"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input())\n",
+        "nums = (n-1)*n//2 + 1\n",
+        "numd = nums + n - 1\n",
+        "print(int(((2*(nums)-1)+(2*(numd)-1))*n/2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XDfERVuWQ9Rp",
+        "outputId": "dda001dc-d4df-4efb-9904-f9c8947c1479"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "27\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
